@@ -1,0 +1,26 @@
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="style.css">
+  	<script language="Javascript">
+		var speed = 0
+
+		liens = new Array;
+		liens[0] = "https://www.loop11.com/ui/?l11_uid=63147&l11_mode=preview";
+		liens[1] = "https://www.loop11.com/ui/?l11_uid=63269&l11_mode=preview";
+
+		function reload()
+		{
+		secret = Math.round(Math.random() * 2);
+		location = liens[secret]
+		}
+		setTimeout("reload()", speed);
+	</script>
+</head>
+<body>
+  ...
+  <!-- Le reste du contenu -->
+  ...
+</body>
+</html>
